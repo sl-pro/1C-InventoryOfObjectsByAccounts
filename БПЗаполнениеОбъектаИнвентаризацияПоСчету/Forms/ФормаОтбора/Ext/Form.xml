@@ -22,8 +22,22 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
+		<CheckBoxField name="ДобавитьСтроки" id="6">
+			<DataPath>ДобавитьСтроки</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура будет добавлена в табличную часть к существующим строкам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ДобавитьСтрокиКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ДобавитьСтрокиРасширеннаяПодсказка" id="8"/>
+		</CheckBoxField>
 		<InputField name="СчетУчета" id="1">
 			<DataPath>СчетУчета</DataPath>
+			<HorizontalStretch>false</HorizontalStretch>
 			<ContextMenu name="СчетУчетаКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="СчетУчетаРасширеннаяПодсказка" id="3"/>
 		</InputField>
@@ -47,6 +61,20 @@
 			</Type>
 			<Save>
 				<Field>СчетУчета</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДобавитьСтроки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить строки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ДобавитьСтроки</Field>
 			</Save>
 		</Attribute>
 	</Attributes>
